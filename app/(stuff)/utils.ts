@@ -1,1 +1,1 @@
-export const runningOnEdge = () => (typeof EdgeRuntime !== 'string')
+export const runningOnEdge = () => Boolean((globalThis as any).EdgeRuntime)
